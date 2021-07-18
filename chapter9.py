@@ -1,8 +1,9 @@
 import cv2
 import numpy as np
 
-faceCascade = cv2.CascadeClassifier("Resources/haarcascade_frontalface_default.xml")
-img = cv2.imread("Resources/lena.png")
+# faceCascade = cv2.CascadeClassifier("Resources/haarcascade_frontalface_default.xml")
+faceCascade = cv2.CascadeClassifier("Resources/haarcascade_russian_plate_number.xml")
+img = cv2.imread("Resources/p1.jpg")
 # imgR = cv2.resize(img,(600,600))
 imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
